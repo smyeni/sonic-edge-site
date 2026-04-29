@@ -14,6 +14,43 @@
       line-height: 1.6;
     }
 
+    nav {
+      background: #0f0f10;
+      border-bottom: 1px solid #2a2a2e;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .nav-brand {
+      font-size: 15px;
+      font-weight: bold;
+      color: #ffb347;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav ul li a {
+      color: #cfcfcf;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffb347;
+    }
+
     header {
       padding: 80px 20px;
       text-align: center;
@@ -91,9 +128,34 @@
       color: #888;
       background: #151518;
     }
+
+    footer a {
+      color: #ffb347;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer hr {
+      border: none;
+      border-top: 1px solid #2a2a2e;
+      margin: 16px auto;
+      width: 60%;
+    }
   </style>
 </head>
 <body>
+
+<nav>
+  <a href="index.html" class="nav-brand">SONIC EDGE</a>
+  <ul>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
 
 <header>
   <h1>SONIC EDGE</h1>
@@ -102,7 +164,7 @@
   <p>Built for workshops, enthusiasts, and long-distance confidence.</p>
 
   <div class="buttons">
-    <a href="https://amazon.co.za" target="_blank rel="noopener" class="btn btn-primary">Shop on Amazon</a>
+    <a href="https://amazon.co.za" target="_blank" rel="noopener" class="btn btn-primary">Shop on Amazon</a>
     <a href="#products" class="btn btn-secondary">Browse Service Kits</a>
   </div>
 </header>
@@ -112,14 +174,14 @@
   <div class="section">
     <h2>Why Sonic Edge Exists</h2>
     <div class="card">
-      Modern vehicles demand precision.</br> 
+      Modern vehicles demand precision.<br>
       We supply correctly specified OEM and proven aftermarket parts — no guesswork, no substitutes, no comebacks.
     </div>
   </div>
 
   <div class="section" id="products">
     <h2>Core Product Focus</h2>
-    <strong>Recesion-proof your rig, car or fleet</strong>
+    <strong>Recession-proof your rig, car or fleet</strong>
 
     <div class="card">
       <strong>Basic Service Kits:</strong>
@@ -142,7 +204,7 @@
         <li>Radiator caps</li>
         <li>Radiator hoses and clamps</li>
         <li>Correct-spec coolant solutions</li>
-        <li>Don't overlook heater temperature control valve (plastic material tends to degrade after thousands of repeatitive heat cycles).</li>
+        <li>Don't overlook heater temperature control valve (plastic material tends to degrade after thousands of repetitive heat cycles).</li>
       </ul>
     </div>
 
@@ -184,23 +246,13 @@
 
 </div>
 
-<footer class="site-footer">
-    <p>&copy; 2026 <strong>Sonic Edge (Pty) Ltd</strong></p>
-    <span class="legal-name">Operating as Sonic Auto</span>
-    
-    <hr class="footer-divider">
-    
-    <p>
-        5 Umkomaas East Road, Paulshof, Sandton, South Africa | 
-        <a href="tel:+27738440832">073 844 0832</a>
-    </p>
-    
-    <p>
-        Email: <a href="mailto:info@sonicauto.co.za">info@sonicauto.co.za</a> | 
-        Web: <a href="https://sonicedgeauto.co.za">www.sonicedgeauto.co.za</a>
-    </p>
-</footer>  
+<footer>
+  <p>&copy; 2026 <strong>Sonic Edge (Pty) Ltd</strong></p>
+  <span>Operating as Sonic Auto</span>
+  <hr>
+  <p>5 Umkomaas East Road, Paulshof, Sandton, South Africa | <a href="tel:+27738440832">073 844 0832</a></p>
+  <p>Email: <a href="mailto:info@sonicauto.co.za">info@sonicauto.co.za</a> | Web: <a href="https://sonicedgeauto.co.za">www.sonicedgeauto.co.za</a></p>
+</footer>
 
 </body>
 </html>
-
