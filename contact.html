@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Sonic Auto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #0f0f10;
+      color: #ffffff;
+      line-height: 1.75;
+    }
+
+    nav {
+      background: #0f0f10;
+      border-bottom: 1px solid #2a2a2e;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .nav-brand {
+      font-size: 15px;
+      font-weight: bold;
+      color: #ffb347;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 24px;
+    }
+
+    nav ul li a {
+      color: #cfcfcf;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: #ffb347;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .page-heading {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #ffffff;
+      border-left: 4px solid #ffb347;
+      padding-left: 1rem;
+      margin-bottom: 2.5rem;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #ffb347;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .card {
+      background: #1c1c20;
+      border-radius: 8px;
+      border: 1px solid #2a2a2e;
+      padding: 1.25rem 1.5rem;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid #2a2a2e;
+      font-size: 15px;
+      color: #cfcfcf;
+    }
+
+    .contact-row:last-child {
+      border-bottom: none;
+    }
+
+    .contact-row .label {
+      font-size: 12px;
+      color: #888;
+      min-width: 80px;
+    }
+
+    .contact-row a {
+      color: #ffb347;
+      text-decoration: none;
+    }
+
+    .contact-row a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact form */
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 12px;
+      color: #888;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      background: #0f0f10;
+      border: 1px solid #2a2a2e;
+      border-radius: 6px;
+      padding: 10px 14px;
+      color: #ffffff;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #ffb347;
+    }
+
+    .form-group textarea {
+      height: 130px;
+      resize: vertical;
+    }
+
+    .btn-submit {
+      display: inline-block;
+      padding: 12px 28px;
+      background: #ffb347;
+      color: #000;
+      font-weight: bold;
+      font-size: 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .btn-submit:hover {
+      background: #ffa020;
+    }
+
+    /* Map */
+    .map-wrapper {
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid #2a2a2e;
+    }
+
+    .map-wrapper iframe {
+      display: block;
+      width: 100%;
+      height: 320px;
+      border: none;
+      filter: grayscale(30%) invert(90%) hue-rotate(180deg);
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      font-size: 14px;
+      color: #888;
+      background: #151518;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ffb347;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer hr {
+      border: none;
+      border-top: 1px solid #2a2a2e;
+      margin: 16px auto;
+      width: 60%;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-brand">SONIC EDGE</a>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+
+  <h1 class="page-heading">Contact Us</h1>
+
+  <!-- Contact details -->
+  <div class="section">
+    <p class="section-label">Get in touch</p>
+    <div class="card">
+      <div class="contact-row">
+        <span class="label">Phone</span>
+        <a href="tel:+27738440832">073 844 0832</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">General</span>
+        <a href="mailto:info@sonicauto.co.za">info@sonicauto.co.za</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">Sales</span>
+        <a href="mailto:sales@sonicauto.co.za">sales@sonicauto.co.za</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">Trade</span>
+        <a href="mailto:parts@sonicauto.co.za">parts@sonicauto.co.za</a>
+      </div>
+      <div class="contact-row">
+        <span class="label">Address</span>
+        <span>Richards Bay, KwaZulu-Natal, South Africa</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact form -->
+  <div class="section">
+    <p class="section-label">Send us a message</p>
+    <div class="card">
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. John Dlamini" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone number (optional)</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Tell us what you need..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Map -->
+  <div class="section">
+    <p class="section-label">Our location</p>
+    <div class="map-wrapper">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d134781.30598973436!2d31.910020415035493!3d-28.778410032676103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1efa1877da2312b7%3A0x9fcd92a09e577160!2sRichards%20Bay!5e1!3m2!1sen!2sza!4v1777489265423!5m2!1sen!2sza" width="600" height="450" style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 <strong>Sonic Edge (Pty) Ltd</strong></p>
+  <span>Operating as Sonic Auto</span>
+  <hr>
+  <p>Richards Bay, KwaZulu-Natal, South Africa | <a href="tel:+27738440832">073 844 0832</a></p>
+  <p>Email: <a href="mailto:info@sonicauto.co.za">info@sonicauto.co.za</a> | Web: <a href="https://sonicedgeauto.co.za">www.sonicedgeauto.co.za</a></p>
+</footer>
+
+</body>
+</html>
